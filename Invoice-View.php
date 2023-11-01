@@ -6,7 +6,13 @@ $id=$_POST['view-invoice'];
 
 $sql="SELECT * from invoice WHERE ID='$id'";
 $result=mysqli_query($conn,$sql);
+if($result==true)
+{
 $row=mysqli_fetch_array($result);
+$amount=$row['Amount'];
+$address=$row['Address'];
+$product=$row['Product'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +44,9 @@ $row=mysqli_fetch_array($result);
 <body>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js" integrity="sha512-Fd3EQng6gZYBGzHbKd52pV76dXZZravPY7lxfg01nPx5mdekqS8kX4o1NfTtWiHqQyKhEGaReSf4BrtfKc+D5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js.map"></script>
 <?php include 'Header.php';?>
 <section>
     <div class="flex flex-row">
@@ -47,8 +56,13 @@ $row=mysqli_fetch_array($result);
         <div class="w-2/3">
 
         <h1 class="font-semibold text-center text-2xl my-5">Download Invoice</h1>
+        <button class="middle  none center mr-4 rounded-lg bg-blue-500 my-5 py-3
+         px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg         
+         hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 
+         disabled:shadow-none"
+  data-ripple-light="true" id="printButton">Download PDF</button>
         
-        <div class="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto mt-8">
+        <div class="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto mt-8" id="contentToPrint">
     <h1 class="font-bold text-2xl my-4 text-center text-blue-600">GLA Services</h1>
     <hr class="mb-2">
     <div class="flex justify-between mb-6">
@@ -61,7 +75,7 @@ $row=mysqli_fetch_array($result);
     <div class="mb-8">
         <h2 class="text-lg font-bold mb-4">Bill To:</h2>
         <div class="text-gray-700 mb-2"><?php echo $row['Name'];?></div>
-        <div class="text-gray-700 mb-2"><?php echo $row['Address'];?></div>
+        <div class="text-gray-700 mb-2"><?php echo $address;?></div>
         
         <div class="text-gray-700"><?php echo $row['Email'];?></div>
     </div>
@@ -69,20 +83,20 @@ $row=mysqli_fetch_array($result);
         <thead>
             <tr>
                 <th class="text-left font-bold text-gray-700">Description</th>
-                <th class="text-right font-bold text-gray-700"><?php echo $row['Amount'];?></th>
+                <th class="text-right font-bold text-gray-700"><?php echo $amount;?></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="text-left text-gray-700"><?php echo $row['Product'];?></td>
-                <td class="text-right text-gray-700">$<?php echo $row['Amount'];?></td>
+                <td class="text-left text-gray-700"><?php echo $product;?></td>
+                <td class="text-right text-gray-700">$<?php echo $amount;?></td>
             </tr>
             
         </tbody>
         <tfoot>
             <tr>
                 <td class="text-left font-bold text-gray-700">Total</td>
-                <td class="text-right font-bold text-gray-700">$<?php echo $row['Amount'];?></td>
+                <td class="text-right font-bold text-gray-700">$<?php echo $amount;?></td>
             </tr>
         </tfoot>
     </table>
@@ -98,6 +112,27 @@ $row=mysqli_fetch_array($result);
         </div>
     </div>
 </section>
+<script>
+// Get the print button element
+const printButton = document.getElementById('printButton');
+
+// Get the content to print element
+const contentToPrint = document.getElementById('contentToPrint');
+
+// Add a click event listener to the print button
+printButton.addEventListener('click', () => {
+    // Hide the print button to avoid printing it
+    printButton.style.display = 'none';
+
+    // Print the content within contentToPrint
+    window.print();
+
+    // Show the print button again after printing
+    printButton.style.display = 'block';
+});
+
+</script>
+
 
 
 <?php include 'footer.php';?>
