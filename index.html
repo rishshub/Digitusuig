@@ -1,1 +1,212 @@
-hii hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body id="body" onscroll="handleScroll()">
+  <div class="firstSec">
+    <div id='firstSectionContainer' class="firstSectionContainer">
+      <div class="navBarConntainer">
+        <div class="logo">
+          <img src="./images/logo.svg" class="logoImage" alt="">
+        </div>
+        <div class="middleOptions">
+          <div class="borderButton">
+            <a class="factLinkContainer" href="/expertise/facturation-electronique/">
+              Facturation électronique
+              2024
+            </a>
+          </div>
+          <div class="addOption" onmouseover="showDropdown()" onmouseleave="hideDropdown()">
+            <span class="navBarOpt">Expertise</span>
+            <span id="dropdown1" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+              <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                <div class="flex gap-5">
+                  <div class="w-[270px] border-r pr-4"><label
+                      class="text-xl font-semibold font-heading ">NOTRE<br>EXPERTISE</label>
+                    <p class="text-base text-gray-600 font-heading mt-2">Optimisez vos échanges de données B2B au profit
+                      de votre productivité en adéquation avec vos exigences sectorielles</p>
+                  </div>
+                  <div class="text-base font-heading pl-4 flex flex-col justify-center">
+                    <ul class="leading-8 text-esalink-orange">
+                      <li class="font-semibold hover:opacity-90"><a href="/expertise/edi/">EDI - L'échange de Données
+                          Informatisé</a></li>
+                      <li class="font-semibold hover:opacity-90 mt-2"><a href="/expertise/facturation-electronique/">La
+                          facturation électronique</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="addOption" onmouseover="showDropdown2()" onmouseleave="hideDropdown2()">
+            <span class="navBarOpt">Solutions</span>
+            <span id="dropdown2" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+              <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                <div class="flex gap-5">
+                  <div class="w-[270px] border-r pr-4"><label
+                      class="text-xl font-semibold font-heading ">NOS<br>SOLUTIONS</label>
+                    <p class="text-base text-gray-600 font-heading mt-2">Catalysez la collaboration au sein de votre
+                      écosystème à travers une large gamme de solutions de dématérialisation adaptées à vos besoins</p>
+                  </div>
+                  <div class="text-base font-heading pl-4 ">
+                    <div class="border-b mb-3 pb-2"><a class="font-semibold hover:text-esalink-orange"
+                        href="/solutions/">Nos solutions</a></div>
+                    <div class="flex gap-10 justify-center ">
+                      <ul class="leading-8">
+                        <li class="font-semibold">On premise</li>
+                        <li class="text-esalink-orange hover:opacity-90"><a
+                            href="/solutions/tradexpress/">TradeXpress</a>
+                        </li>
+                        <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/ibm-sterling/">IBM
+                            Sterling</a></li>
+                        <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/cleo/">Cleo</a></li>
+                      </ul>
+                      <ul class="leading-8">
+                        <li class="font-semibold">Cloud</li>
+                        <li class="text-esalink-orange hover:opacity-90"><a href="/solutions/hubtimize/">Hubtimize®</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="addOption" onmouseover="showDropdown3()" onmouseleave="hideDropdown3()">
+            <span class="navBarOpt">Services</span>
+            <div id="dropdown3" class="hover-target submenu absolute group-hover:transition duration-300 shadow-xl">
+              <div class="bg-white text-gray-700 w-auto rounded-lg mt-[15px] p-12">
+                <div class="flex gap-5">
+                  <div class="w-[270px] border-r pr-4"><label
+                      class="text-xl font-semibold font-heading ">NOS<br>SERVICES</label>
+                    <p class="text-base text-gray-600 font-heading mt-2">Optimisez vos échanges de données B2B au profit
+                      de votre productivité en adéquation avec vos exigences sectorielles</p>
+                  </div>
+                  <div class="text-base font-heading pl-4 flex flex-col justify-center">
+                    <div class="border-b mb-3 pb-2"><a class="font-semibold hover:text-esalink-orange"
+                        href="/nos-services/">Nos services</a></div>
+                    <div class="flex gap-10 justify-center">
+                      <ul class="leading-8 text-esalink-orange">
+                        <li class="font-semibold hover:opacity-90 "><a href="/nos-services/tma/">TMA - Tierce
+                            maintenance
+                            applicative</a></li>
+                        <li class="font-semibold hover:opacity-90"><a href="/nos-services/regie/">Régie</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="addOption">
+            Blog
+          </div>
+        </div>
+        <div class="navButton">
+          Get Demo
+        </div>
+        <div class="fropt">
+          <select name="cars" id="cars">
+            <option value="volvo">FR</option>
+            <option value="saab">En</option>
+            <option value="mercedes">Tr</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mainBodyContainer">
+
+      <div class="imageContainer">
+        <img
+          src="https:/www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fiso-27001.c9102e6a.webp&w=1080&q=75"
+          class="webIconImage">
+      </div>
+      <h1 class="HeadingContainer">
+        La dématérialisation
+        <br>
+        au service de votre business
+      </h1>
+      <div class="descriptionTextContainer">
+        Esalink vous accompagne dans la digitalisation de vos flux B2B
+      </div>
+      <div class="twoButttonContainer">
+        <div class="buttons">Trouver votre solution EDI</div>
+        <div class="buttons">Passer à la facturation électronique</div>
+      </div>
+      <img src="https://www.esalink.com/_next/static/media/globe_white_block.6699e2aa.svg" class="globeIcon" alt="">
+      <div class="bottomImageIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgenerix-white.e5ab8b0c.webp&w=256&q=75"
+          alt="" class="bottomIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcleo-white.ad4618e5.webp&w=128&q=75"
+          alt="" class="bottomIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FHUBTIMIZE-white.19537ec6.webp&w=256&q=75"
+          alt="" class="bottomIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fibm-white.7d4e8780.webp&w=128&q=75"
+          alt="" class="bottomIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgs1-white.c6b5f462.webp&w=128&q=75"
+          alt="" class="bottomIcons">
+        <img
+          src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffne-white.f8c056bc.webp&w=640&q=75"
+          alt="" class="bottomIcons">
+      </div>
+    </div>
+  </div>
+<script>
+    const handleScroll = () => {
+      const styleElementWhite = document.createElement('style');
+      const styleElementBlack = document.createElement('style');
+      const whiteBorderBottom = '.navButton {color: white;background-color:#ffffff56;}.factLinkContainer:hover {background-color: inherit;}.addOption {color: white;} .addOption:hover {border-bottom: 3px solid white;}';
+      const blackBorderBottom = '.navButton {color: black;background-color:#f1f5f9;}.factLinkContainer:hover {background-color: white;}.addOption {color: black;}.addOption:hover {border-bottom: 3px solid black;}';
+      styleElementWhite.textContent = whiteBorderBottom;
+      styleElementBlack.textContent = blackBorderBottom;
+      document.getElementsByClassName('logoImage')[0].src = ${window.scrollY <= 90 ? './images/logo.svg' : './images/scrollLogo.svg'}
+      document.getElementById('firstSectionContainer').style.cssText = `${window.scrollY <= 90 ? 'background-color: transparent'
+        :
+        `z-index: 10;
+        color: black;
+        background-color: #ffffffe1;
+         }
+      document.getElementsByClassName('factLinkContainer')[0].style.cssText = ${window.scrollY <= 90 ? 'border-color: white; color: white;' : 'border-color: #80a4cb;color: #80a4cb;'}
+      document.getElementById('body').appendChild(window.scrollY <= 90 ? styleElementWhite : styleElementBlack);
+
+    };
+    const hideDropdown = () => {
+      document.getElementById('dropdown1').style.display = 'none';
+    }
+
+    const showDropdown = () => {
+      document.getElementById('dropdown1').style.display = 'block';
+    }
+
+    const hideDropdown2 = () => {
+      document.getElementById('dropdown2').style.display = 'none';
+    }
+
+    const showDropdown2 = () => {
+      document.getElementById('dropdown2').style.display = 'block';
+    }
+
+    const hideDropdown3 = () => {
+      document.getElementById('dropdown3').style.display = 'none';
+    }
+
+    const showDropdown3 = () => {
+      document.getElementById('dropdown3').style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>

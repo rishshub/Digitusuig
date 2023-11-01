@@ -1,0 +1,218 @@
+body {
+    overflow-x: hidden;
+}
+
+.firstSec {
+    height: 100vh;
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    
+}
+
+.webIconImage {
+    height: 70px;
+    width: auto;
+    color: transparent;
+    filter: brightness(0) invert(1);
+}
+
+.dropdown1 {
+    display: none;
+}
+
+.dropdown2 {
+    display: none;
+}
+
+.dropdown3 {
+    display: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mainBodyContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 10.2vw 0 6vw;
+    position: relative;
+
+}
+
+.globeIcon {
+    position: absolute;
+    opacity: 0.5;
+    height: 80vh;
+    right: -30vw
+}
+
+.firstSectionContainer {
+    position: sticky;
+    top: 0px;
+}
+
+
+
+.descriptionTextContainer {
+    font-weight: 600;
+    color: white;
+}
+
+.twoButttonContainer {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+option {
+    color: black;
+}
+
+select {
+    padding: 3px;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.buttons {
+    cursor: pointer;
+    border-radius: 10px;
+    width: fit-content;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.348);
+}
+
+.bottomImageIcons {
+    display: flex;
+    width: 80%;
+    margin: 50px 0;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.bottomIcons {
+    height: 40px;
+    margin: 0 20px;
+    animation: moveRightToLeft 0.5s ;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.buttons:hover {
+    background-color: rgba(255, 255, 255, 0.545);
+}
+
+.descriptionTextContainer {
+    margin: 20px 0;
+}
+
+.HeadingContainer {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.firstSectionContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.middleOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.navBarConntainer {
+    display: flex;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    width: 85vw;
+    /* border: 2px solid red; */
+}
+
+.logo {
+    margin-right: 3.5rem;
+}
+
+.firstSectionContainer {
+    display: flex;
+}
+
+.logoImage {
+    height: auto;
+    width: 199px;
+}
+
+.factLinkContainer {
+    display: block;
+    border-radius: .625rem;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: .75rem 1rem;
+    font-family: Outfit;
+    font-size: .813rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.addOption {
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.addOption:hover {
+    border-bottom: 3px solid white;
+}
+
+.fropt {
+    color: white;
+    font-weight: 600;
+}
+
+.highlghtedButton {
+    color: white;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.highlghtedButton:hover {
+    background-color: rgba(255, 255, 255, 0.535);
+}
