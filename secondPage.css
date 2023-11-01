@@ -1,0 +1,90 @@
+.secondsec {
+    padding: 50px;
+    background: linear-gradient(0deg, rgb(230, 252, 255), rgb(255, 255, 255)) 0% 0% / auto repeat scroll padding-box border-box rgb(178, 212, 255);
+}
+
+.secsec {
+    display: flex;
+    width: 100%;
+    padding: 40px 40px 40px 100px;
+
+}
+
+.imagesinthis {
+    width: 65%;
+}
+
+#img1 {
+    width: 85%;
+}
+
+.cardst {
+    width: 35%;
+    margin-right: 20px;
+}
+
+.t1 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 0px;
+    font-size: 1rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding: 1px 20px;
+    margin-left: 5vw;
+}
+
+.linkForGetting {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.t2 {
+    font-family: var(--font-family-display, 'Charlie Display', sans-serif);
+    font-weight: 600;
+    font-size: 30px;
+    padding: 3px 20px;
+    margin-left: 5vw;
+
+}
+
+.t3 {
+    width: 50%;
+    padding: 0px 20px;
+    margin-left: 5vw;
+
+}
+
+.ct {
+   
+    width: 70%;
+}
+
+.a2
+{
+    background-color: rgb(0, 199, 229);
+    border-radius: 0.3rem 0px 0px 0.3rem;
+    margin-right: 5px;
+    
+}
+.carder
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+   cursor: pointer;
+    /* flex-direction: column; */
+}
+.cardercopy
+{
+    box-shadow: rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px;
+}
+.etext
+{
+    visibility: hidden;
+}
+.image-transition 
+{
+    /* transition: transform 0.5s ease-in-out; */
+  
+}

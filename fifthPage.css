@@ -1,0 +1,187 @@
+
+.beforef
+{
+    color: rgb(255, 255, 255);
+    background: rgb(24, 27, 52);
+    padding-top: 0px;
+    padding-bottom: 64px;
+}
+.contenter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+#bf1
+{
+    font-size: 1.75rem;
+    line-height: 40px;
+    font-weight: 400;
+    
+}
+#bf2
+{
+   font-weight: 700;
+}
+#bf3
+{
+    font-size: 20px;
+    box-sizing: border-box;
+    font-weight: 300;
+    margin-top: auto;
+}
+.bt1get
+{
+    padding: 16px 32px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    line-height: 17px;
+    background-color: #6161FF;
+    color: #ffffff;
+}
+.arroww
+{
+    color: white;
+}
+.animated-text:hover {
+    font-size: 24px;
+    animation: moveRight 2s ease-in forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(20px); 
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: #797c89;
+    margin: 8vh 0;
+}
+
+.mainFooter {
+    margin-bottom: 7vh;
+}
+.navButton {
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    background-color:#ffffff56;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#bf1 {
+    margin: 20px;
+}
+
+#bf3 {
+    margin: 20px;
+}
+
+.bottomLinks{
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottomrights {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 24vw;
+}
+.access {
+    display: flex;
+    justify-content: center;
+    width: 24vw;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.secondCol {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.footerColumn > p {
+    font-weight: 400;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.bottomLinks > div {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.firstCol {
+    width:12vw;
+}
+
+.bottomLogoCont {
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+}
+
+.bottomLogo {
+    height: 30px;
+}
+
+.selectFn {
+    border: none;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+}
+
+.divider > hr {
+    width: 80vw;
+    height: 1.1px;
+    background-color: #dadada;
+    border: none;
+}
+
+.foothead {
+    font-weight: 500;
+}
+
+.flogoImg {
+    height: 50px;
+}
+
+.flogo {
+    height: 20px;
+    margin-right: 7px;
+}
+
+.flogoContainer {
+    display: flex;
+    align-items: center;
+}
