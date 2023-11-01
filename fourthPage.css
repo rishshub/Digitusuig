@@ -1,0 +1,116 @@
+.fourthBodyContainer {
+    background: linear-gradient(0deg, rgb(230, 252, 255), rgb(255, 255, 255)) 0% 0% / auto repeat scroll padding-box border-box rgb(178, 212, 255);
+}
+
+.fourthBodyContainer {
+    padding-bottom: 10vh;
+}
+
+.headerFourth{
+    font-size: 40px;
+    font-weight: 800;
+}
+.subHeader {
+    font-size: 20px;
+}
+
+.fourthBodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerBoard {
+    color: #6161ff
+}
+
+.master4Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vw;
+}
+
+.master4Container > div {
+    margin: 15px 0
+}
+
+.fourthBodyContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.logoBoard {
+    height: 30px;
+}
+
+.hed {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.desc {
+    line-height: 30px;
+}
+
+.headerBoard {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.men {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.monoLogo {
+    height: 20px;
+}
+
+.videoAnimation {
+    width: fit-content;
+    box-shadow: 0px 10px 30px 20px #6161ff3f;
+}
+
+
+.descriptionFourth {
+    display: none;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.active {
+    display: flex;
+}
+
+.menuBar{
+    display: flex;
+    width: 60vw;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    height: 90px;
+    align-items: center;
+    box-shadow: 0px 10px 30px #6161ff3f;
+}
+.menBorder {
+    border-bottom: 3px solid #6161ff;
+}
+
+.videoAnimation {
+    height: 300px;
+}
+
+.menuBar > div {
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+.menuBar > div:hover {
+    background-color: rgba(60, 134, 252, 0.165);
+}

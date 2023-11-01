@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./secondPage.css">
+  <link rel="stylesheet" href="./thirdPage.css">
+  <link rel="stylesheet" href="./fourthPage.css">
+  <link rel="stylesheet" href="./fifthPage.css">
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
+
 <body id="body" onscroll="handleScroll()">
   <div class="firstSec">
     <div id='firstSectionContainer' class="firstSectionContainer">
@@ -164,7 +168,323 @@
       </div>
     </div>
   </div>
-<script>
+  <div class="secondsec">
+    <p class="t1">TRELLO 101</p>
+    <h2 class="t2">A productivity powerhouse</h2>
+    <div class="t3">Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of
+      who’s doing what
+      and what needs to get done. Learn more in our <a class="linkForGetting" href="https://trello.com/guide">guide for
+        getting started.</a></div>
+    <div class="secsec">
+      <div class="cardst">
+        <div class="carder cardercopy">
+          <div class="a2 eles" data-imagurl="./images/trello1.webp">
+            <p class="etext">bf</p>
+          </div>
+          <div>
+            <h3>Boards</h3>
+            <p class="ct">Trello boards keep tasks organized and
+              work moving forward. In a glance, see
+              everything from "things to do" to "aww
+              yeah, we did it!"</p>
+          </div>
+        </div>
+        <div class="carder cardercopy">
+          <div class="eles" data-imagurl="./images/img2.webp">
+            <p class="etext">bf</p>
+          </div>
+          <div>
+            <h3>Lists</h3>
+            <p class="ct">The different stages of a task. Start as
+              simple as To Do, Doing or Done-or build
+              a workflow custom fit to your team's
+              needs. There's no wrong way to Trello.</p>
+          </div>
+        </div>
+        <div class="carder cardercopy">
+          <div class="eles" data-imagurl="./images/trello3.webp">
+            <p class="etext">bf</p>
+          </div>
+          <div>
+            <h3>Cards</h3>
+            <p class="ct">Trello boards keep tasks organized and
+              work moving forward. In a glance, see
+              everything from "things to do" to "aww
+              yeah, we did it!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="imagesinthis">
+        <img id="img1" class="image-transition" src="./images/trello1.webp">
+      </div>
+    </div>
+  </div>
+  <div class="thirdSectionContainer">
+    <div class="thirdSectionInfoContainer">
+      <div class="thirdHeader">Full Control Over Your <span class="headerTeam">Team</span></div>
+      <div class="firstDesc">
+        <div class="firstDescHeader">
+          Real-time sales reports & analytics
+        </div>
+        <img src="./images/leadpng.png" class="thirdIconPng" alt="">
+        <div class="thirdSecDescriptionText">
+          With interactive dashboards, view your sales KPIs in real-time to analyze your performance and gain unique
+          insights into your business.
+        </div>
+      </div>
+      <div class="firstDesc">
+        <div class="firstDescHeader">
+          Choose who your leads go to
+        </div>
+        <img src="./images/track.png" class="thirdIconPng" alt="">
+        <div class="thirdSecDescriptionText">
+          Decide which sales agents receive new leads from ads and cold calling campaigns. Reassign leads with the click
+          of a button.
+        </div>
+      </div>
+    </div>
+    <div class="thirdSectionAnimation">
+      <dotlottie-player src="https://lottie.host/f6e72f1c-d647-40f4-baa7-733b922b0799/5eXbsGyPN9.json"
+        background="transparent" speed="1"
+        style="width:50vw;border-top-left-radius: 30px;border-bottom-left-radius: 30px;border-top: 1px solid grey;border-left: 1px solid grey;border-bottom: 1px solid grey;height: 600px"
+        direction="1" className="cardIn" mode="normal" loop autoplay></dotlottie-player>
+    </div>
+  </div>
+  <div class="fourthSection">
+    <div class="master4Container">
+      <div class="headerFourth">
+        Everything you need for any workflow
+      </div>
+      <div class="subHeader">
+        Easily build your ideal workflow with monday.com building blocks.
+      </div>
+      <div class="menuBar">
+        <div id="men1" onclick="showDesc('desc1', 'men1')" class="men menBorder"><img class="monoLogo" src="./images/boards.webp" alt=""><span>Boards</span></div>
+        <div id="men2" onclick="showDesc('desc2', 'men2')" class="men"><img class="monoLogo" src="./images/views.webp" alt=""><span>Views</span></div>
+        <div id="men3" onclick="showDesc('desc3', 'men3')" class="men"><img class="monoLogo" src="./images/dashboard_icon.webp" alt=""><span>Dashboards</span></div>
+        <div id="men4" onclick="showDesc('desc4', 'men4')" class="men"><img class="monoLogo" src="./images/integrations_icon.webp" alt=""><span>Integrations</span></div>
+        <div id="men5" onclick="showDesc('desc5', 'men5')" class="men"><img class="monoLogo" src="./images/automations_icon.webp" alt=""><span>Automations</span></div>
+        <div id="men6" onclick="showDesc('desc6', 'men6')" class="men"><img class="monoLogo" src="./images/apps_icon.webp" alt=""><span>Apps</span></div>
+        <div id="men7" onclick="showDesc('desc7', 'men7')" class="men"><img class="monoLogo" src="./images/docs_icon.webp" alt=""><span>Docs</span></div>
+      </div>
+    </div>
+    <div class="fourthBodyContainer">
+      <div class="videoAnimation">
+        <video class="video" preload="auto" loop=""
+          poster="https://dapulse-res.cloudinary.com/video/upload/so_0p/Generator_featured images/Home Page - 2022 Rebrand/tabs/final-videos-tabs/7_status.jpg"
+          style="width: 100%; height: 100%;" playsinline="" webkit-playsinline="" x5-playsinline="" autoplay="">
+          <source
+            src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured images/Home Page - 2022 Rebrand/tabs/final-videos-tabs/7_status.mp4">
+        </video>
+      </div>
+      <div class="descriptionFourth active" id="desc1">
+        <div class="hed">
+          <img class="logoBoard" src="./images/boards.webp" alt="">
+          <span class="headerBoard">Boards</span>
+        </div>
+        <div class="desc">
+          Everything starts with a visual board — the core of monday.com Work OS. Tailor it your way and manage anything
+          from projects to departments.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc2">
+        <div class="hed">
+          <img class="logoBoard" src="./images/views.webp" alt="">
+          <span class="headerBoard">Views</span>
+        </div>
+        <div class="desc">
+          Visualize and plan your work more efficiently with multiple views: Kanban board, calendar, timeline, Gantt
+          chart, and more.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc3">
+        <div class="hed">
+          <img class="logoBoard" src="./images/dashboard_icon.webp" alt="">
+          <span class="headerBoard">Dashboards</span>
+        </div>
+        <div class="desc">
+          Get the insights you need to make decisions with confidence. Keep track of progress, timelines, and budgets
+          with custom dashboards.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc4">
+        <div class="hed">
+          <img class="logoBoard" src="./images/integrations_icon.webp" alt="">
+          <span class="headerBoard">Integrations</span>
+        </div>
+        <div class="desc">
+          Connect monday.com with all your favorite tools and get more work done. Integrate Slack, Dropbox, Adobe
+          Creative Cloud, and more.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc5">
+        <div class="hed">
+          <img class="logoBoard" src="./images/automations_icon.webp" alt="">
+          <span class="headerBoard">Automations</span>
+        </div>
+        <div class="desc">
+          Streamline processes to focus on the work that matters. Choose from a variety of automation recipes or create
+          your own in minutes.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc6">
+        <div class="hed">
+          <img class="logoBoard" src="./images/apps_icon.webp" alt="">
+          <span class="headerBoard">Apps</span>
+        </div>
+        <div class="desc">
+          Expand the capabilities of your Work OS with monday apps. Enhance your workflows with custom views, widgets,
+          integrations, and more.
+        </div>
+      </div>
+      <div class="descriptionFourth" id="desc7">
+        <div class="hed">
+          <img class="logoBoard" src="./images/docs_icon.webp" alt="">
+          <span class="headerBoard">Docs</span>
+        </div>
+        <div class="desc">
+          Transform text into action items, in just a few clicks. Connect, collaborate, and execute ideas and workflows
+          in real-time from any doc.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="beforef">
+    <div class="contenter">
+      <h3 id="bf1">Deliver your best work <span id="bf2">with monday.com</span></h3>
+      <h5 id="bf3">No credit card needed ✦ Unlimited time on Free plan</h5>
+      <button class="bt1get">Get Started 
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.628.616a.5.5 0 1 0-.64.768L6.203 3.23H.5a.5.5 0 0 0 0 1h5.612L3.988 6a.5.5 0 1 0 .64.769l3.23-2.693a.5.5 0 0 0 0-.768L4.628.616z">
+          </path>
+        </svg></button>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footerColumn">
+        <img class="flogoImg" src="./images/monday-logo.webp" alt="">
+        <p>Pricing</p>
+        <p>Contact us</p>
+        <p>Templates</p>
+        <p>SMB</p>
+        <p>Enterprise</p>
+        <p>Nonprofits</p>
+        <p>App marketplace</p>
+        <p>24/7 support</p>
+      </div>
+      <div class="footerColumn">
+        <div class="foothead">Features</div>
+        <p>Docs</p>
+        <p> Integrations</p>
+        <p>Automations</p>
+        <p>Files</p>
+        <p>Dashboards</p>
+        <p> Kanban</p>
+        <p>Gantt</p>
+      </div>
+      <div class="footerColumn">
+        <div class="foothead">monday products</div>
+        <p class="flogoContainer"><img class="flogo" src="./images/Footer_wm_logo.webp"> <span>monday work
+            management</span></p>
+        <p class="flogoContainer"><img class="flogo" src="./images/crm_icon_footer.webp"><span>monday sales CRM</span>
+        </p>
+        <p class="flogoContainer"><img class="flogo" src="./images/dev_new_mobile_footer_logo.webp">dev new mobile
+          footer logo</p>
+        <p>monday dev</p>
+        <div class="foothead">More by monday.com</div>
+        <p>workcanvas icon footer</p>
+        <p class="flogoContainer"><img src="./images/workcanvas_icon_footer.webp" class="flogo"
+            alt=""><span>WorkCanvas</span></p>
+        <p class="flogoContainer"><img src="./images/workforms_icon_footer.webp" class="flogo"
+            alt=""><span>workforms</span></p>
+      </div>
+      <div class="footerColumn">
+        <div class="foothead">Use cases</div>
+        <p>Marketing</p>
+        <p>Project management</p>
+        <p>Sales</p>
+        <p>Developers</p>
+        <p>HR</p>
+        <p>IT</p>
+        <p>Operations</p>
+        <p>Construction</p>
+      </div>
+      <div class="footerColumn">
+        <div class="foothead">Company</div>
+        <p>About us</p>
+        <p>Careers - We're hiring!</p>
+        <p>monday-U</p>
+        <p>Press</p>
+        <p>Customer stories</p>
+        <p>Become a partner</p>
+        <p>Sustainability & ESG</p>
+        <p>Affiliates</p>
+        <p>Digital Lift</p>
+        <p>Investor relations</p>
+      </div>
+      <div class="footerColumn">
+        <div class="foothead">Resources</div>
+        <p>Help Center</p>
+        <p>Community</p>
+        <p>Blog</p>
+        <p>What's new</p>
+        <p>monday spaces</p>
+        <p>Webinars</p>
+        <p>Startup for startup</p>
+        <p>Global events</p>
+        <p>App development</p>
+        <p>Find a partner</p>
+        <p>Compare</p>
+      </div>
+    </div>
+    <div class="divider">
+      <hr>
+    </div>
+    <div class="mainFooter">
+      <div class="firstCol">
+        <img class="footerImgPng" src="./images/footerLinks.png" alt="">
+      </div>
+      <div class="secondCol">
+        <div class="bottomLogoCont">
+          <img class="bottomLogo" src="./images/1stLogo.webp" alt="">
+          <img class="bottomLogo" src="./images/2ndLogo.webp" alt="">
+          <img class="bottomLogo" src="./images/3rdLogo.webp" alt="">
+          <img class="bottomLogo" src="./images/4rthLogo.webp" alt="">
+        </div>
+        <div class="bottomLinks">
+          <div>Security</div>
+          <div>Terms and privacy</div>
+          <div>Privacy Policy</div>
+          <div>Cookie Settings</div>
+          <div>Status</div>
+        </div>
+        <div class="bottomrights">All Rights Reserved © monday.com</div>
+        <div class="access">Accessibility statement</div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const showDesc = (div_id, btn_id) => {
+      // alert(id)
+      document.querySelectorAll('.descriptionFourth').forEach(e => {
+        e.style.display = 'none';
+      });
+
+      document.querySelectorAll('.men').forEach(e => {
+        e.classList.remove('menBorder');
+      })
+      var selectedDiv = document.getElementById(div_id);
+      var btn = document.getElementById(btn_id);
+      if (btn) {
+        btn.classList.add('menBorder');
+      }
+      if (selectedDiv) {
+        selectedDiv.style.display = 'block';
+      }
+
+    }
     const handleScroll = () => {
       const styleElementWhite = document.createElement('style');
       const styleElementBlack = document.createElement('style');
@@ -172,17 +492,34 @@
       const blackBorderBottom = '.navButton {color: black;background-color:#f1f5f9;}.factLinkContainer:hover {background-color: white;}.addOption {color: black;}.addOption:hover {border-bottom: 3px solid black;}';
       styleElementWhite.textContent = whiteBorderBottom;
       styleElementBlack.textContent = blackBorderBottom;
-      document.getElementsByClassName('logoImage')[0].src = ${window.scrollY <= 90 ? './images/logo.svg' : './images/scrollLogo.svg'}
+      document.getElementsByClassName('logoImage')[0].src = `${window.scrollY <= 90 ? './images/logo.svg' : './images/scrollLogo.svg'}`
       document.getElementById('firstSectionContainer').style.cssText = `${window.scrollY <= 90 ? 'background-color: transparent'
         :
         `z-index: 10;
         color: black;
         background-color: #ffffffe1;
-         }
-      document.getElementsByClassName('factLinkContainer')[0].style.cssText = ${window.scrollY <= 90 ? 'border-color: white; color: white;' : 'border-color: #80a4cb;color: #80a4cb;'}
+         `}`
+      document.getElementsByClassName('factLinkContainer')[0].style.cssText = `${window.scrollY <= 90 ? 'border-color: white; color: white;' : 'border-color: #80a4cb;color: #80a4cb;'}`
       document.getElementById('body').appendChild(window.scrollY <= 90 ? styleElementWhite : styleElementBlack);
 
     };
+
+    const a2Elements = document.querySelectorAll('.eles');
+    const cards = document.querySelectorAll('.carder');
+    const imagy = document.getElementById("img1");
+    cards.forEach((element) => {
+      element.addEventListener('click', function () {
+        const eles = element.querySelector(".eles");
+        console.log(eles.dataset.imagurl);
+        imagy.src = eles.dataset.imagurl;
+        imagy.classList.add('image-transition');
+        a2Elements.forEach((el) => {
+          el.classList.remove('a2');
+        });
+        eles.classList.add('a2');
+      });
+
+    });
     const hideDropdown = () => {
       document.getElementById('dropdown1').style.display = 'none';
     }
@@ -206,7 +543,7 @@
     const showDropdown3 = () => {
       document.getElementById('dropdown3').style.display = 'block';
     }
-  }
-</script>
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,57 @@
+.thirdSectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16vh 0;
+}
+
+.thirdSectionInfoContainer {
+    display: flex;
+    margin-left: 5vw;
+    flex-direction: column;
+}
+
+.headerTeam {
+    border-bottom: 3px solid #ffce05;
+}
+
+.firstDesc {
+    width: 40vw;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+    
+}
+
+.firstDesc:hover {
+    border-radius: 10px;
+    border: 0.2px solid grey;
+}
+
+.thirdHeader {
+    font-size: 40px;
+    font-weight: 550;
+    margin-bottom: 40px;
+}
+
+.thirdIconPng {
+    position: absolute;
+    left: -20px;
+    height: 50px;
+    bottom: 40px;
+}
+
+.firstDescHeader {
+    font-size: 28px;
+    font-weight: 600;
+    width: 95%;
+    margin-left: auto;
+}
+
+.thirdSecDescriptionText {
+    font-size: 17px;
+    font-weight: 300;
+    width: 95%;
+    margin-left: auto;
+}
+
